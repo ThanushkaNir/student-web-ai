@@ -1,0 +1,249 @@
+.support-tickets-page {
+  padding: 32px 0 60px;
+  min-height: calc(100vh - 64px);
+}
+
+.support-tickets-page .page-header {
+  margin-bottom: 24px;
+}
+
+.support-tickets-page .page-header h1 {
+  font-family: var(--font-display);
+  font-size: 1.75rem;
+  margin-bottom: 8px;
+}
+
+.support-tickets-page .page-header p {
+  color: var(--color-text-muted);
+}
+
+.ticket-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.filter-select,
+.status-select {
+  padding: 8px 12px;
+  border-radius: var(--radius);
+  border: 1px solid var(--color-border);
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-size: 0.9rem;
+}
+
+.ticket-form {
+  max-width: 480px;
+  margin-bottom: 24px;
+}
+
+.ticket-form h3 {
+  margin-bottom: 16px;
+}
+
+.ticket-form input,
+.ticket-form textarea {
+  width: 100%;
+  padding: 10px 12px;
+  margin-bottom: 12px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  background: var(--color-bg);
+  color: var(--color-text);
+}
+
+.ticket-form input[aria-invalid='true'],
+.ticket-form textarea[aria-invalid='true'],
+.response-form textarea[aria-invalid='true'] {
+  border-color: var(--color-error);
+}
+
+.ticket-error {
+  margin: -6px 0 10px;
+  color: var(--color-error);
+  font-size: 0.85rem;
+}
+
+.tickets-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.ticket-card {
+  padding: 20px;
+  transition: box-shadow 0.2s ease;
+}
+
+.ticket-card.has-response {
+  border-left: 3px solid var(--color-success);
+}
+
+.ticket-card-header {
+  margin-bottom: 12px;
+}
+
+.ticket-status {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-right: 8px;
+}
+
+.ticket-status.OPEN {
+  background: rgba(245, 158, 11, 0.2);
+  color: var(--color-warning);
+}
+
+.ticket-status.IN_PROGRESS {
+  background: rgba(6, 182, 212, 0.2);
+  color: var(--color-primary);
+}
+
+.ticket-status.RESOLVED,
+.ticket-status.CLOSED {
+  background: rgba(16, 185, 129, 0.2);
+  color: var(--color-success);
+}
+
+.responded-badge {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  background: rgba(16, 185, 129, 0.15);
+  color: var(--color-success);
+  margin-left: 8px;
+}
+
+.ticket-card-header h3 {
+  font-size: 1.1rem;
+  margin: 8px 0 4px;
+}
+
+.ticket-meta {
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+}
+
+.ticket-desc {
+  color: var(--color-text-muted);
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin-bottom: 12px;
+  white-space: pre-wrap;
+}
+
+.ticket-response {
+  background: var(--color-bg-elevated);
+  padding: 16px;
+  border-radius: var(--radius);
+  margin-bottom: 16px;
+  font-size: 0.95rem;
+  border-left: 4px solid var(--color-primary);
+}
+
+.response-header {
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.response-header strong {
+  color: var(--color-primary);
+  font-size: 0.9rem;
+}
+
+.response-content {
+  color: var(--color-text);
+  line-height: 1.6;
+  white-space: pre-wrap;
+}
+
+.admin-controls {
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px solid var(--color-border);
+}
+
+.admin-actions-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.response-label {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 8px;
+  color: var(--color-text);
+  font-size: 0.9rem;
+}
+
+.ticket-card-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+}
+
+.response-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 16px;
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  margin-top: 12px;
+}
+
+.response-form textarea {
+  min-width: 100%;
+  width: 100%;
+  padding: 12px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  background: var(--color-bg-card);
+  color: var(--color-text);
+  font-size: 0.95rem;
+  font-family: inherit;
+  line-height: 1.5;
+  resize: vertical;
+}
+
+.response-form textarea:focus {
+  outline: none;
+  border-color: var(--color-primary);
+}
+
+.response-form .form-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 0;
+}
+
+.page-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.page-links a {
+  color: inherit;
+}
+
+.muted {
+  color: var(--color-text-muted);
+}

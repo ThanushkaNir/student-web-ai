@@ -1,0 +1,80 @@
+.download-center-page {
+  padding: 32px 0 60px;
+  min-height: calc(100vh - 64px);
+}
+
+.filter-card {
+  margin-bottom: 18px;
+}
+
+.filter-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.filter-grid label {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 0.86rem;
+  color: var(--color-text-muted);
+}
+
+.filter-grid select {
+  padding: 10px 12px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  background: var(--color-bg);
+  color: var(--color-text);
+}
+
+.download-list {
+  display: grid;
+  gap: 12px;
+}
+
+.download-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 14px;
+}
+
+.download-meta h3 {
+  margin: 0 0 4px;
+  font-size: 1rem;
+}
+
+.download-meta p {
+  margin: 0;
+  color: var(--color-text-muted);
+  font-size: 0.88rem;
+}
+
+.download-meta .topic {
+  margin-top: 3px;
+}
+
+.download-actions {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.page-links {
+  display: flex;
+  gap: 12px;
+  margin-top: 22px;
+}
+
+@media (max-width: 768px) {
+  .filter-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .download-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

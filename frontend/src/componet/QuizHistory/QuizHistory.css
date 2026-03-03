@@ -1,0 +1,68 @@
+.quiz-history-page {
+  padding: 32px 0 60px;
+  min-height: calc(100vh - 64px);
+}
+
+.quiz-history-page .page-header {
+  margin-bottom: 24px;
+}
+
+.quiz-history-page .page-header h1 {
+  font-family: var(--font-display);
+  font-size: 1.75rem;
+  margin-bottom: 8px;
+}
+
+.quiz-history-page .page-header p {
+  color: var(--color-text-muted);
+}
+
+.table-wrap {
+  overflow-x: auto;
+  margin-bottom: 24px;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--color-border);
+}
+
+.score-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--color-bg-card);
+}
+
+.score-table th,
+.score-table td {
+  padding: 14px 16px;
+  text-align: left;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.score-table thead th {
+  background: var(--color-bg-elevated);
+  font-weight: 600;
+  color: var(--color-text-muted);
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.score-table tbody tr:hover {
+  background: rgba(6, 182, 212, 0.05);
+}
+
+.score-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.history-actions {
+  display: flex;
+  gap: 12px;
+}
+
+.history-actions a {
+  color: inherit;
+}
+
+.muted {
+  color: var(--color-text-muted);
+}
